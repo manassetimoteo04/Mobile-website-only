@@ -45,3 +45,15 @@ msg.addEventListener('click', function () {
     alert('Mensagem enviada')
   }
 })
+
+
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
